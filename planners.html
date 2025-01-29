@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rourkela Unveiled</title>
+    <link rel="stylesheet" href="planners.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visit Rourkela</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header class="navbar">
+            <div class="logo">Visit Rourkela</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="planners.html">Planner</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!-- Itinerary Planner Section -->
+         <section id="planner" class="planner">
+         <h2>Plan Your Trip</h2>
+         <form id="itinerary-form">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" required>
+
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" min="1" max="7" required>
+
+            <label for="places">Select Destinations:</label>
+            <select id="places" multiple required>
+                <option>Hanuman Vatika</option>
+                <option>Khandadhar Waterfall</option>
+                <option>Vedavyas Temple</option>
+                <option>Indira Gandhi Park</option>
+                <option>Vaishno Devi Temple</option>
+                <option>Darjing and Deoghar</option>
+            </select>
+
+            <button type="submit">Generate Itinerary</button>
+        </form>
+        <div id="itinerary-output"></div>
+    </section>
+</body>
+</html>
